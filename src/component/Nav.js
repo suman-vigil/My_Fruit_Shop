@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -8,11 +8,13 @@ const Nav = (props) => {
   const [newsL, setNewsL] = useState(true);
   const closeNewsLetter = () => setNewsL(false);
 
+  useEffect(() => {
+    newsL && <NewsLetter closeNewsLetter={closeNewsLetter} />;
+  });
+
   return (
     <>
       <div style={{ backgroundColor: props.mode === "dark" ? "#333333" : "" }}>
-        {newsL && <NewsLetter closeNewsLetter={closeNewsLetter} />}
-
         <nav id="Home" className=" container-fluid">
           <div className="d-flex">
             <div className="headnav col-md-6">

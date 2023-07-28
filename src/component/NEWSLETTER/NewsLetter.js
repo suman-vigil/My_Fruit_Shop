@@ -8,7 +8,7 @@ const NewsLetter = ({ closeNewsLetter }) => {
     return () => {
       document.body.style.overflowY = "scroll";
     };
-  }, []);
+  });
 
   return (
     <>
