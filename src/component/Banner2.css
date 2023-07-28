@@ -1,0 +1,40 @@
+.banner {
+  background-image: url("https://cdn.shopify.com/s/files/1/0329/0664/1541/files/image_3_596510aa-d772-403a-b90b-bf2fde1b05e5.png?v=1613787669");
+  height: 35rem;
+  text-align: center;
+}
+
+.banner h2 {
+  padding-top: 10rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.banner h1 {
+  font-family: "Alegreya", serif;
+  color: #fe9a00;
+  font-size: 4em;
+}
+
+.banner p {
+  color: grey;
+  border: 1px dotted greenyellow;
+  margin: auto;
+  width: 50rem;
+  height: 40px;
+  background-color: rgba(220, 244, 183, 0.9);
+  font-size: 15px;
+  word-spacing: 2px;
+  padding-top: 10px;
+}
+
+.banner button {
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #98ca3c;
+  border: none;
+  color: white;
+  font-size: small;
+  margin-top: 30px;
+}

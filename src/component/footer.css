@@ -1,0 +1,56 @@
+.footerImages{
+    width: 25px;
+    height:25px;
+    border-radius: 100%;
+    margin: 5px;
+    }
+
+.option{
+    font-size: .9rem;
+    color: grey;
+    letter-spacing: .9px;
+    word-spacing: .5px;
+    text-align: center;
+}
+
+.option ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.option li{
+    border-right:.5px solid grey;
+    margin-bottom: 12px;
+}
+
+.li{
+    text-decoration: none;
+    color: grey;
+    padding: 1px 15px;
+}
+
+.li:hover{
+    color:#fe9a00;
+}
+
+.icon{
+    font-size: 1.5rem;
+    color: #fe9a00;
+    margin:0 12px;
+    border-radius: 100%;
+    height:30px ;
+    width: 30px;
+    text-align: center;
+}
+
+.cont p{
+    font-size: .9rem;
+    color: grey;
+}
+
+.icon:hover{
+    color: #98ca3c 
+}

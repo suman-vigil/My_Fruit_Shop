@@ -1,0 +1,28 @@
+.FruitsDescription {
+  margin: auto;
+  padding-right: 8rem;
+}
+
+.buton {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  margin: 2px 2px;
+  background-color: #fe9a00;
+  /* border-radius: 20px; */
+}
+
+.quantity {
+  width: 2rem;
+  text-align: center;
+}
+
+.cartBtn {
+  padding: 15px 35px;
+  background-color: yellowgreen;
+  margin-top: 10px;
+  border: none;
+  color: blabk;
+  font-size: small;
+}

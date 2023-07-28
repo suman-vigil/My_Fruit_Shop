@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Head Navbar */
+.headnav {
+  background-color: #fe9a00;
+  height: 40px;
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.contact,
+.mail,
+.wishlist,
+.log {
+  font-family: Muli, HelveticaNeue, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+.link {
+  z-index: 3;
+}
+
+.navicon {
+  margin: auto 10px auto 5px;
+  font-size: large;
+}
+
+.contact {
+  margin-left: 100px;
+}
+
+.wishlist {
+  margin: auto 20px auto 20px;
+  padding-right: 20px;
+  border-right: 1px solid white;
+  text-decoration: none;
+  color: white;
+}
+
+.wishlist:hover {
+  color: white;
+}
+
+.navcnt {
+  margin: auto 80px auto auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: grey;
+}
+
+/* NAVBAR */
+.img {
+  width: 200px;
+  padding: 15px;
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.menuIcon {
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+
+.menuOption {
+  margin: auto;
+  display: flex;
+  color: aqua;
+}
+
+.ic {
+  padding-right: 20px;
+  font-size: large;
+  color: black;
+}
+
+.ic:hover {
+  color: #fe9a00;
+}
+
+#search {
+  border-radius: 40px;
+  height: 40px;
+}
+
+.searchTxt {
+  position: absolute;
+  display: none;
+  border: none;
+  background-color: rgba(189, 189, 189);
+  border-radius: 40px;
+  padding-left: 0.5rem;
+  right: 1rem;
+}
+
+#search:hover .searchTxt {
+  display: block;
+}
+
+.dropOp {
+  color: grey;
+  font-size: 14px;
+  padding-right: 5rem;
+}
+
+.dropImg {
+  margin: 10px;
+}
+
+/* BANNER */
+.ban {
+  padding: 4rem;
+  background-image: url(Assests/image2.webp);
+}
+
+.bHead {
+  padding-bottom: 25px;
+  font-size: 5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.bPara {
+  color: #fe9a00;
+  font-family: Dancing Script, cursive;
+}
+
+.bPar {
+  font-style: oblique;
+  word-spacing: 2px;
+}
+
+.button,
+.butn {
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fe9a00;
+  border: none;
+  color: white;
+  font-size: small;
+  margin-top: 30px;
+}
+
+.navLnk {
+  text-decoration: none;
+  color: black;
+}
+
+.navLnk:hover {
+  color: #fe9a00;
+}
+
+/* ABOUT */
+
+.abtImg {
+  width: 13rem;
+  margin: 150px;
+  margin-bottom: 80px;
+}
+
+.about {
+  padding-top: 6rem;
+  padding-right: 6rem;
+}
+
+.about p {
+  color: grey;
+  margin-top: 25px;
+}
+
+/* CARD */
+.card:hover {
+  border: 1px solid orange;
+  box-shadow: 1px 1px 10px #fe9a00;
+}
+.card:hover .cardImg {
+  background-color: #fe9a00;
+}
+
+/* CARDIMAGE */
+.cardImg {
+  height: 3.5rem;
+  padding: 10px;
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 100px;
+  transform: translateX(50%);
+  z-index: 1;
+  box-shadow: 2px 2px 11px 1px #0000001a;
+}
+
+/* CAROUSEL */
+.carousel {
+  height: 25rem;
+  background-image: url(https://cdn.shopify.com/s/files/1/0329/0664/1541/files/p_banner_2_aff532aa-59d6-4108-95f7-39a11f417d94.png?v=1613787669);
+}
+
+.crl {
+  padding: 85px 200px;
+}
+
+.crl p {
+  color: grey;
+  padding: 50px;
+  padding-top: 15px;
+  font-size: 14px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.crl h6 {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+/* CARDS1 */
+.frhFruit {
+  background-image: url("./Assests/image3.jpg");
+  margin: 70px 20px 70px 70px;
+}
+
+.frhFruit p,
+.frhVegetable p {
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+
+.frhFruit h1,
+.frhVegetable h1 {
+  padding-left: 3rem;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.frhVegetable {
+  background-image: url("./Assests/image4.jpg");
+  margin: 70px 70px 70px 20px;
+}
+
+.butn {
+  margin: 10px auto 3rem 3rem;
+}
+
+.butn:hover {
+  background-color: #eea537;
+}
+
+.navLnk {
+  display: inline-block;
+}

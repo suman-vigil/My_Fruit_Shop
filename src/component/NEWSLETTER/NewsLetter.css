@@ -1,0 +1,69 @@
+.modalWrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(189, 189, 189, 0.8);
+  z-index: 3;
+}
+
+.box {
+  position: fixed;
+  border: 5px dotted #fe9a00;
+  background-color: white;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.modalImg {
+  width: 98%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.cancel {
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+}
+
+.newsLetter {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.modalInput {
+  height: 3rem;
+  border: none;
+  width: 80%;
+  background-color: rgb(220, 216, 216);
+  text-align: center;
+}
+
+.inputDiv {
+  text-align: center;
+}
+
+.subs {
+  text-align: center;
+}
+
+.subscribe {
+  width: 30%;
+  border: none;
+  height: 3rem;
+  font-size: small;
+  background-color: #fe9a00;
+  margin: 1rem;
+}
+
+.subscribe:hover {
+  background-color: #d19f54;
+}

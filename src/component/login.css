@@ -1,0 +1,85 @@
+.loginBar {
+  display: flex;
+  height: 6rem;
+  background-color: #f8f8f8;
+  padding-top: 35px;
+}
+
+.loginP1 {
+  padding-left: 7rem;
+  font-size: 14px;
+  color: grey;
+}
+.loginP2 {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  padding-right: 7rem;
+  color: grey;
+}
+
+.loginBox {
+  padding: 2rem 2rem 0.5rem 2rem;
+  border: 1px solid #ddd;
+  height: 24rem;
+}
+
+.topBox {
+  margin: 4rem 1rem 5rem 3rem;
+  width: 35rem;
+}
+
+.bottomBox {
+  margin: 4rem 5rem 5rem 1rem;
+  width: 35rem;
+}
+
+.input {
+  border-color: 1px #ddd;
+  font-size: 12px;
+  padding: 17px 25px;
+  margin-bottom: 30px;
+  height: inherit;
+  width: 100%;
+}
+
+.loginBoxP1 {
+  color: #fe9a00;
+}
+
+.loginbtn {
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fe9a00;
+  border: none;
+  color: white;
+  font-size: small;
+}
+
+.topBox h3,
+.bottomBox h3 {
+  font-size: 23px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.loginBoxP2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 2;
+  letter-spacing: 0.4px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.loginBox h6 {
+  font-size: 14px;
+  /* color: #555; */
+  line-height: 2;
+  letter-spacing: 0.4px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}

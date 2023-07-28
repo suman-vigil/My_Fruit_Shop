@@ -1,0 +1,28 @@
+.createInput {
+  display: grid;
+  border-color: 1px #ddd;
+  font-size: 12px;
+  padding: 17px 25px;
+  margin-bottom: 30px;
+  height: inherit;
+  width: 100%;
+}
+
+.createAcc {
+  border: 1px solid #ddd;
+}
+
+.outterBox {
+  padding: 4rem;
+}
+
+.formIn {
+  padding: 3rem;
+}
+
+.outterBox h3 {
+  font-size: 23px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}

@@ -1,0 +1,62 @@
+.cartItem {
+  display: flex;
+}
+
+.quan {
+  width: 3rem;
+  text-align: center;
+}
+
+.cartbton {
+  width: 2rem;
+  margin: 2px;
+  border: none;
+  background-color: #fe9a00;
+}
+
+.description {
+  margin-left: 3rem;
+}
+
+.cartItem {
+  /* border: 2px solid grey; */
+  background-color: rgba(179, 219, 69, 0.2);
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.cartItems {
+  width: 40%;
+  margin: auto;
+}
+
+.emptyCart {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 3rem;
+}
+
+.checkout {
+  text-align: center;
+  /* position: relative; */
+  /* position: fixed; */
+  /* z-index: 2; */
+}
+
+.cbtn {
+  margin: auto 1rem 3rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: small;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.5px;
+  background-color: yellowgreen;
+}
+
+.cbtn:hover {
+  background-color: rgb(173, 210, 100);
+}
