@@ -238,20 +238,18 @@ const Navbar = (props) => {
           </ul>
         </div>
         <div className="menuIcon col-md-2">
-          <Link>
-            <div id="search">
-              <li className="ic">
-                <input type="text" placeholder="Search" className="searchTxt" />
-                <div
-                  className={`searchIcon text-${
-                    props.mode === "dark" ? "light" : "dark"
-                  }`}
-                >
-                  <FiSearch />
-                </div>
-              </li>
-            </div>
-          </Link>
+          <div id="search">
+            <li className="ic">
+              <input type="text" placeholder="Search" className="searchTxt" />
+              <div
+                className={`searchIcon text-${
+                  props.mode === "dark" ? "light" : "dark"
+                }`}
+              >
+                <FiSearch />
+              </div>
+            </li>
+          </div>
           <Link>
             <div
               className={`ic text-${props.mode === "dark" ? "light" : "dark"}`}
