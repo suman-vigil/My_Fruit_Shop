@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import NewsLetter from "./NEWSLETTER/NewsLetter";
 
 const Banner = (props) => {
+  const [newsL, setNewsL] = useState(true);
+  const closeNewsLetter = () => setNewsL(false);
+
   return (
     <>
+      {newsL && <NewsLetter closeNewsLetter={closeNewsLetter} />}
+
       <div className={`ban container-fluid d-flex  bg-${props.mode}`}>
         <div className="col-md-7.5">
           <h4 className="bPara">Healthy Fruits 20% off </h4>
