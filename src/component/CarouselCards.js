@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { productsData } from "../services/data";
 import { CartContext } from "../Context/Context";
 import "./CarouselCards.css";
 import { FaShoppingCart } from "react-icons/fa";
@@ -13,15 +14,13 @@ export const CarouselCards = (props) => {
 
   return (
     <div className="myCard">
-      <Link>
-        <a href={"/productsData/${productsData._id}"}>
-          <div
-            className="image"
-            style={{ textAlign: "center", paddingTop: "1.2rem" }}
-          >
-            <img src={img} alt="Fruit" />
-          </div>
-        </a>
+      <Link to={`/productsData/${[id]}`}>
+        <div
+          className="image"
+          style={{ textAlign: "center", paddingTop: "1.2rem" }}
+        >
+          <img src={img} alt="Fruit" />
+        </div>
       </Link>
       <hr />
       <p className="p1">{fruitName}</p>

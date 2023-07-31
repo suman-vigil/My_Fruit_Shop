@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import CarouselCards from "./CarouselCards";
 import "../component/ProductCarousel.css";
 import { productsData } from "../services/data";
+import { Link } from "react-router-dom";
 
 const ProductCarousel = (props) => {
   const carouselRef = useRef({});
@@ -45,7 +46,6 @@ const ProductCarousel = (props) => {
           <button className={`btnNext bg-${props.mode}`} onClick={btnpressnext}>
             <p>&gt;</p>
           </button>
-
           <div
             className={`CarouselCards text-dark bg-${props.mode}`}
             ref={carouselRef}
