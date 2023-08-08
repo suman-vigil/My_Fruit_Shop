@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { FiSearch, FiSettings, FiSun } from "react-icons/fi";
 import { Dropdown, NavDropdown } from "react-bootstrap";
+import Search from "../component/Search/Search";
 
 const Navbar = (props) => {
+  const [search, setSearch] = useState(false);
+  const closeSearch = () => setSearch(false);
+
   return (
     <>
+      {search && <Search closeSearch={closeSearch} />}
+
       <div
         className={`menu container-fluid`}
         style={{ backgroundColor: props.mode === "dark" ? "#333333" : "" }}
@@ -238,18 +244,18 @@ const Navbar = (props) => {
           </ul>
         </div>
         <div className="menuIcon col-md-2">
-          <div id="search">
-            <li className="ic">
-              <input type="text" placeholder="Search" className="searchTxt" />
-              <div
-                className={`searchIcon text-${
-                  props.mode === "dark" ? "light" : "dark"
-                }`}
-              >
-                <FiSearch />
-              </div>
-            </li>
-          </div>
+          <Link
+            className={`ic text-${props.mode === "dark" ? "light" : "dark"}`}
+            // to="/search"
+          >
+            {/* <div
+              className={`ic text-${props.mode === "dark" ? "light" : "dark"}`}
+              onClick={() => setSearch(true)}
+            > */}
+            <FiSearch onClick={() => setSearch(true)} />
+            {/* </div> */}
+          </Link>
+
           <Link>
             <div
               className={`ic text-${props.mode === "dark" ? "light" : "dark"}`}

@@ -115,25 +115,6 @@
   color: #fe9a00;
 }
 
-#search {
-  border-radius: 40px;
-  height: 40px;
-}
-
-.searchTxt {
-  position: absolute;
-  display: none;
-  border: none;
-  background-color: rgba(189, 189, 189);
-  border-radius: 40px;
-  padding-left: 0.5rem;
-  right: 1rem;
-}
-
-#search:hover .searchTxt {
-  display: block;
-}
-
 .dropOp {
   color: grey;
   font-size: 14px;

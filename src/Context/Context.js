@@ -47,8 +47,6 @@ export const Context = (props) => {
     getTotalCartAmount,
   };
 
-  // console.log(cartItems);
-
   return (
     <CartContext.Provider value={contextValue}>
       {props.children}

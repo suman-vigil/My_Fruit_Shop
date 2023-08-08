@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { productsData } from "../../services/data";
 import { useParams } from "react-router-dom";
 import "../../component/FRUITS/Fruits.css";
-
 import Nav from "../Nav";
 import Footer from "../footer";
-
 import Navbar from "../Navbar";
 import Bar from "../Bar";
 
@@ -24,7 +22,7 @@ const Fruits = () => {
   };
   const { id } = useParams();
   const product = productsData.find((p) => p.id === Number(id));
-  console.log(product);
+  // console.log(product);
 
   return (
     <>
@@ -69,7 +67,6 @@ const Fruits = () => {
         </div>
       </div>
       <Footer />
-      {/* <div>{product.fruitName}</div>; */}
     </>
   );
 };
