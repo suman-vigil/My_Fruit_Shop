@@ -20,9 +20,9 @@ const Fruits = () => {
   const incNum = () => {
     if (count < stock) setCount(count + 1);
   };
+
   const { id } = useParams();
   const product = productsData.find((p) => p.id === Number(id));
-  // console.log(product);
 
   return (
     <>

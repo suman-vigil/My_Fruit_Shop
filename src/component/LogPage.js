@@ -3,8 +3,14 @@ import { Link, useNavigate } from "react-router-dom";
 import "../component/login.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../component/firebase";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LogPage = (props) => {
+  const diffToast = () => {
+    toast("Login Successfully");
+  };
+
   const navigate = useNavigate();
   const [values, setValues] = useState({ email: "", password: "" });
   const [error, setError] = useState({});
@@ -31,6 +37,7 @@ const LogPage = (props) => {
       .then(async (res) => {
         console.log(res);
         navigate("/");
+        diffToast();
       })
 
       .catch((err) => {
@@ -128,7 +135,7 @@ const LogPage = (props) => {
                 to="/createAcc"
                 style={{ textDecoration: "none", color: "white" }}
               >
-                CREATE
+                REGISTER
               </Link>
             </button>
           </div>
@@ -136,6 +143,7 @@ const LogPage = (props) => {
       </div>
     </>
   );
+  <ToastContainer />;
 };
 
 export default LogPage;

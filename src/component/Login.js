@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Bar from "./Bar";
 import Footer from "./footer";
 import LogPage from "./LogPage";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [mode, setMode] = useState("light");
@@ -22,6 +24,7 @@ const Login = () => {
       <Bar Title="ACCOUNT" mode={mode} />
       <LogPage mode={mode} toggleMode={toggleMode} />
       <Footer />
+      {/* <ToastContainer /> */}
     </>
   );
 };
