@@ -36,13 +36,15 @@ const LogPage = (props) => {
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(async (res) => {
         console.log(res);
-        navigate("/");
+        setTimeout(() => {
+          navigate("/");
+        }, 2500);
         diffToast();
       })
 
       .catch((err) => {
-        setError(err.message);
-        console.log("Error-", err.message);
+        setError(err);
+        console.log("Error-", err);
       });
 
     const { email, password } = values;
@@ -58,7 +60,7 @@ const LogPage = (props) => {
     );
   };
 
-  const validate = (values) => {
+  const validate = (values, err) => {
     const errors = {};
 
     if (!values.email || !values.password) {
@@ -102,9 +104,17 @@ const LogPage = (props) => {
                 value={values.password}
               ></input>
               <br />
+
               {error.password && (
                 <p style={{ color: "red", fontSize: 15 }}>{error.password}</p>
               )}
+              {error.message && (
+                <p style={{ color: "red", fontSize: 15 }}>
+                  Invalid Email and Password
+                </p>
+              )}
+
+              {/* {error && <p style={{ color: "red", fontSize: 15 }}>{error}</p>} */}
 
               <button type="submit" value="submit" className="loginbtn">
                 LOGIN
@@ -129,7 +139,6 @@ const LogPage = (props) => {
               Easy. It Allows You To Be Able To Order From Our Shop. To Start
               Shopping Click Register.
             </p>
-
             <button className="loginbtn">
               <Link
                 to="/createAcc"
@@ -138,12 +147,16 @@ const LogPage = (props) => {
                 REGISTER
               </Link>
             </button>
+            <ToastContainer
+              position="top-center"
+              autoClose={500}
+              hideProgressBar={true}
+            />
           </div>
         </div>
       </div>
     </>
   );
-  <ToastContainer />;
 };
 
 export default LogPage;

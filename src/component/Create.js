@@ -5,8 +5,15 @@ import { db } from "./firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
 import { auth } from "../component/firebase";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Create = (props) => {
+  const diffToast = () => {
+    toast("Sign In Successfully");
+  };
+
   const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
@@ -47,7 +54,11 @@ const Create = (props) => {
           Password: values.password,
           ConfirmPass: values.confirmPass,
         });
-        navigate("/");
+        setTimeout(() => {
+          navigate("/");
+        }, 2500);
+        diffToast();
+        // navigate("/");
       })
       .catch((err) => {
         console.log("Error-", err);
@@ -123,7 +134,7 @@ const Create = (props) => {
                   color: props.mode === "dark" ? "white" : "black",
                 }}
               >
-                Confirm Password
+                Password
               </label>
 
               <input
@@ -139,6 +150,11 @@ const Create = (props) => {
 
               {error.err && (
                 <p style={{ color: "red", fontSize: 15 }}>{error.err}</p>
+              )}
+              {error.message && (
+                <p style={{ color: "red", fontSize: 15 }}>
+                  Email already in use
+                </p>
               )}
               <button className="loginbtn" type="submit" value="Submit">
                 SUBMIT
@@ -171,7 +187,7 @@ const Create = (props) => {
                   color: props.mode === "dark" ? "white" : "black",
                 }}
               >
-                Password
+                Confirm Password
               </label>
 
               <input
@@ -184,6 +200,11 @@ const Create = (props) => {
                 name="password"
                 value={values.password}
               ></input>
+              <ToastContainer
+                position="top-center"
+                autoClose={500}
+                hideProgressBar={true}
+              />
             </div>
           </div>
         </form>
