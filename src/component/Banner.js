@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NewsLetter from "./NEWSLETTER/NewsLetter";
 
 const Banner = (props) => {
@@ -8,7 +8,6 @@ const Banner = (props) => {
   return (
     <>
       {newsL && <NewsLetter closeNewsLetter={closeNewsLetter} />}
-
       <div className={`ban container-fluid d-flex  bg-${props.mode}`}>
         <div className="col-md-7.5">
           <h4 className="bPara">Healthy Fruits 20% off </h4>
